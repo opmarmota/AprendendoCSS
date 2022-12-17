@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: red;
+      color: #fff;
+      font-size: 30px;
+    }
+
+    p {
+      display: none;
+    }
+
+    @media(min-width: 400px) {
+
+      /* Quando a tela for maior ou igual a 400 px ele muda o tamanho da mensagem; Do 400 ao 9999px*/
+      body {
+        background: royalblue;
+      }
+    }
+
+
+    @media(max-width: 320px) {
+
+      /* Quando a tela for menor ou igual a 320px ele muda o tamanho da mensagem; Do 50 ao 320px*/
+      body {
+        font-size: 50px;
+        background: purple;
+      }
+
+      p {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html" style="font-size:15px">Voltar</a>
+  Texto 1
+  <p>
+    Texto 2
+  </p>
+</body>
+
+</html>

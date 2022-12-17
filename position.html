@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      background: blueviolet;
+      color: antiquewhite;
+      margin: 40px 0;
+      height: 150px;
+      position: relative
+        /* Static: Deixa o codigo padronizado */
+        /* position: static; */
+
+        /* Relative: Filho é relativo do pai(pode sobrepor) */
+
+    }
+
+    .filho-re {
+      background: red;
+      position: relative;
+      top: 10px;
+      left: 20px;
+      bottom: 15px;
+      right: 50px;
+
+      width: 120px;
+    }
+
+    .filho-ab {
+      background: red;
+      position: absolute;
+
+      top: 100px;
+      right: 10px;
+    }
+
+    .fixed {
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+      z-index: 999;
+      /* Camada */
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html">Voltar</a>
+
+  <div class="fixed">
+    <a href="https://youtube.com">
+      <img src="imagens/renatao.png" alt="Clique aqui" />
+    </a>
+  </div>
+
+  <div class="container">
+    Texto 1
+
+    <div class="filho-re">
+      Texto 2
+    </div>
+    Texto 3
+
+    <div class="container">
+      Texto 1
+
+      <div class="filho-ab">
+        Texto 2
+      </div>
+      Texto 3
+    </div>
+  </div>
+</body>
+
+</html>

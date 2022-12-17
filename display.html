@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 100vh;
+      background: url("https://media.tenor.com/oEDmWFieLgIAAAAC/xd.gif")
+        /* no-repeat
+      repeat-x
+      repeat-y
+      no-repeat top center */
+        no-repeat left bottom;
+      background-size: 100px 100px
+        /*cover*/
+      ;
+      background-color: purple;
+    }
+
+    p {
+      color: red;
+    }
+
+    p.exp-1 {
+      display: block;
+    }
+
+    p.exp-2 {
+      display: inline;
+    }
+
+    p.exp-3 {
+      display: inline-block;
+    }
+
+    p.exp-4 {
+      display: none;
+    }
+
+    .aparece {
+      display: inline;
+    }
+
+    .aparece:hover p.exp-4 {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html">Voltar</a>
+  <div>
+    Antes
+    <p class="exp-1">Texto 1</p>
+    Depois
+  </div><br>
+
+  <div>
+    Antes
+    <p class="exp-2">Texto 2</p>
+    Depois
+  </div><br>
+
+  <div>
+    Antes
+    <p class="exp-3">Texto 3</p>
+    Depois
+  </div><br>
+
+  <div class="aparece">
+    Coloque o mouse aqui
+    <p class="exp-4">Achou!</p>
+  </div>
+</body>
+
+</html>

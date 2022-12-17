@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container</title>
+
+  <style>
+    article {
+      width: 200px;
+      margin: 0 auto;
+    }
+
+    .container {
+      background: red;
+    }
+
+    #texto-1 {
+      color: aliceblue;
+    }
+
+    #texto-2 {
+      color: blueviolet;
+      padding: 10px;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+
+      background: pink;
+
+      border: 10px solid red;
+      border-radius: 20px 40px 1px 120px;
+
+      transition: all 0.5s;
+    }
+
+    div:hover {
+      border-radius: 0%;
+    }
+
+    .circulo {
+      width: 100px;
+      height: 100px;
+
+      background: blue;
+
+      border: 0px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html">Voltar</a>
+  <article>
+    <section class="container">
+      <p id="texto-1">
+        Aqui é o texto 1
+      </p>
+    </section>
+
+    <section class="container">
+      <p id="texto-2">
+        Aqui é o texto 2
+      </p>
+    </section>
+  </article>
+
+  <div>
+  </div>
+  <div class="circulo">
+  </div>
+</body>
+
+</html>
